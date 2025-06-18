@@ -729,7 +729,7 @@
                 }
 
                 41% {
-                    transform: scaleY(1);
+                    trans: scaleY(1);
                     background-image: radial-gradient(circle, #ff0000 50%, transparent 50%),
                     radial-gradient(circle, #ff0000 50%, transparent 50%);
                     filter: drop-shadow(0 0 4px #ff8686);
@@ -740,77 +740,11 @@
                     opacity: 0;
                 }
             }
-
-            input {
-                z-index: 1000;
-            }
-
-            #form-screen {
-                padding: 0px;
-                background: linear-gradient(to bottom, #ffffff, #8bd2f3);
-                width: 100vw;
-                height: 100vh;
-                position: relative;
-                overflow: hidden;
-            }
-
-            #email-box {
-                width: 50vw;
-                margin-left: 25vw;
-                height: 50px;
-                font-family: 'Roboto';
-                border-radius: 25px;
-                border-style: solid;
-                border-color: black;
-                text-align: center;
-                position: relative;
-                top: -50px;
-            }
-
-            #message-box {
-                width: 50vw;
-                margin-left: 25vw;
-                height: 300px;
-                font-family: 'Roboto';
-                border-radius: 25px;
-                border: solid black;
-                border-width: 2px;
-                padding: 10px;
-                resize: none;
-                box-sizing: border-box;
-            }
-
-            #form-header {
-                position: absolute;
-                font-size: 48px;
-                font-family: 'Poppins', sans-serif;
-                text-align: center;
-                top: 60px;
-                z-index: 10000;
-                color: #D8D9DA;
-            }
-
-            #submit-button {
-                width: 25vw;
-                height: 50px;
-                border-style: solid;
-                border-color: black;
-                border-radius: 25px;
-                margin-left: 37.5vw;
-                z-index: 1000;
-                border-style: solid;
-            }
-
-            #submit-button:hover {
-                opacity: 80%;
-                scale: 1.05;
-            }
         </style>
         <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Poppins&family=Roboto&display=swap" rel="stylesheet">
     </head>
     <body>
-        <button id="bottom-text" onclick="document.querySelector('#form-screen').scrollIntoView({ behavior: 'smooth' });">Get in contact</button>
         <div id="gradient-area" class="screen">
             <div id="intro-text-container" class="fade-in-text">
                 <h1 id="main-intro-text" class="fade-in-text">Welcome to David Wardle's Personal Website!</h1>
@@ -831,7 +765,7 @@
                 </div>
             </div>
         </div>
-
+        
         <div id="skills-screen" class="screen">
             <div id="blur-overlay"></div>
             <div id="skills-container">
@@ -861,14 +795,6 @@
                     </ul>
                 </div>
             </div>
-        </div>
-        <div id="form-screen" class="screen">
-            <h1 id="form-header">Get in contact</h1>
-            <form>
-                <input type="email" id="email-box" placeholder="Enter your email here">
-                <textarea id="message-box" placeholder="Enter your message here"></textarea>
-                <input type="button" id="submit-button" value="Submit Response">
-            </form>
         </div>
         <script>
             const container = document.getElementById('gradient-area');
