@@ -1,0 +1,1 @@
+To use the application, run the .py file, then navigate to "127.0.0.1:5000" in your browser
